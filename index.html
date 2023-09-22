@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <!-- font awesome 6 -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- bootstrap 5 -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" >
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <div class="container w-50 pt-5">
+    <div class="mb-3">
+      <label for="exampleFormControlInput1" class="form-label">Name</label>
+      <input id="namecourse" type="text" class="form-control" id="exampleFormControlInput1" >
+      <div id="namealert" class="alert alert-danger d-none">
+please start with capital latter
+      </div>
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputPassword1" class="form-label">Category</label>
+      <input id="categorycourse"type="text" class="form-control" id="exampleInputPassword1">
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputPassword1" class="form-label">Price</label>
+      <input id="pricecourse"type="number" class="form-control" id="exampleInputPassword1">
+    </div>
+    <div class="mb-3">
+      <label for="exampleFormControlTextarea1" class="form-label">Description</label>
+      <textarea id="decscourse" cid="exampleFormControlTextarea1" rows="3" ></textarea>
+    </div>
+    
+    <button type="button" disabled id="click" class="btn btn-outline-primary">Submit</button>
+    <button type="clear" class="btn btn-primary">clear</button>
+     <div class="d-blok mt-3">
+      <button type="button" id="deletbtn" class="btn btn-danger">delet all</button>
+     </div>
+     <input type="search" onkeypress="search(this)" class="form-control mt-2" placeholder="search....">
+  <table class="table table-dark table-striped mt-5">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Name</th>
+        <th scope="col">Category</th>
+        <th scope="col">Price</th>
+        <th scope="col">Description</th>
+        <th scope="col">info</th>
+      </tr>
+    </thead>
+    <tbody id="data">
+     
+
+    </tr>
+      
+  </table>
+</div>
+
+
+
+    <!-- bootstrap 5 -->
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
